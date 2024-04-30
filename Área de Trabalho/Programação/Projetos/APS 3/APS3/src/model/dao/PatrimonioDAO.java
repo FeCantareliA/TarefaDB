@@ -15,7 +15,7 @@ public class PatrimonioDAO {
         Connection con = ConnectionFactory.getConnection();
         PreparedStatement stmt = null;
         try {
-            stmt=con.prepareStatement("INSERT INTO pessoa(id,dtAquis,estado,observacao) VALUES (?,?,?,?,);");
+            stmt=con.prepareStatement("INSERT INTO patrimonio(id,dtAquis,estado,observacao) VALUES (?,?,?,?,);");
             stmt.setString(1,String.valueOf(p.getId()) );
             stmt.setString(2, p.getDataAquisicao());
             stmt.setString(3, p.getEstado());
