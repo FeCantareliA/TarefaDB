@@ -13,7 +13,25 @@ public class Pessoa {
     private String descricao;
     private String email;
     private String cargo;
-    private String Departamento;
+    private String departamento;
+    private String usuario;
+    private String senha;
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
 
     public int getId() {
         return id;
@@ -48,11 +66,11 @@ public class Pessoa {
     }
 
     public String getDepartamento() {
-        return Departamento;
+        return departamento;
     }
 
     public void setDepartamento(String Departamento) {
-        this.Departamento = Departamento;
+        this.departamento = Departamento;
     }
 
 }

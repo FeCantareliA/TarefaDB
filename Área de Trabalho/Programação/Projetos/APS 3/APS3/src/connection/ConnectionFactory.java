@@ -13,12 +13,12 @@ import java.util.logging.Logger;
  * @author Felipe
  */
 public class ConnectionFactory {
-    private final String DRIVER="org.postgresql.jdbc.Driver";
-    private final String URL="jdbc:postgresql://localhost:5432/dbAPS";
-    private final String USER="postgres";
-    private final String PASS="root";
+    private static final String DRIVER="org.postgresql.Driver";
+    private static final String URL="jdbc:postgresql://localhost:5432/dbaps3";
+    private static final String USER="postgres";
+    private static final String PASS="root";
     
-    public Connection getConnection(){
+    public static Connection getConnection(){
         
         try {
             Class.forName(DRIVER);
@@ -59,6 +59,5 @@ public class ConnectionFactory {
                 Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
             }   
     }
-    
     
 }
